@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #542211 ;
+        font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height:60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.363);
+    padding-right: 17%;
+    padding-left: 17%;
+    z-index: 100;   
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav{
+    align-items: center;
+}
+
+
+nav ul li a {
+    padding: 20px;
+    color: #F4AD21;
+    text-decoration: none;
+    border-radius: 10px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.redes{
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+nav ul li a:hover {
+    background: #F4AD21;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:active {
+    background: #47B29E;
+    color: white;
+}
+
+.banner{
+    position: relative;
+    height: 350px;
+    width: 100vw;
+    background-color:#47B29E;
+
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+main {
+
+    padding-right: 17%;
+    padding-left: 17%;
+    background: white;
+    max-width: 1250px;
+    margin: 20px auto;
+
+}
+
+.novedades{
+    display: flex;
+    justify-content: space-between;
+}
+
+.novedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    background:#ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: auto;
+}
+
+
+.novedad img {
+    width: 100%;
+    height: auto;
+    object-position: center;
+}
+
+.novedad img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.novedad h3 {
+    margin: 10px 0 5px 0;
+    color: #542211;
+    font-size: 1.2em;
+}
+
+.texto-novedad{
+    text-align: center;
+}
+.esto{
+    display: flex;
+    justify-content:center;
+}
+
+.info{
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background: #F4AD21;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.color{
+    background-color: #F4AD21;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.color1{
+    background-color:#47B29E ;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}

@@ -92,6 +92,13 @@ main {
 
 }
 
+main h2 {
+    text-align: center;
+    color:#F4AD21;
+    font-size: 55px;
+    font-family: 'Lobster', cursive;
+}
+
 .novedades{
     display: flex;
     justify-content: space-between;
@@ -149,6 +156,7 @@ footer {
     padding: 1rem;
     margin-top: 20px;
 }
+
 
 .color{
     background-color: #F4AD21;

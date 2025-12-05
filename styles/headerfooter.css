@@ -110,6 +110,11 @@ header {
     
 }
 
+.hredes a img:hover{
+    animation: vibrar 0.5s linear infinite;
+    scale: 1.1
+}
+
 nav ul li a:hover{
     color: #74230a;
 }
@@ -194,3 +199,18 @@ nav ul li a:hover{
 }
 
 
+
+
+
+@keyframes vibrar {
+
+    33%{
+        transform: rotate(7deg);
+    }
+
+    66%{
+        transform: rotate(-7deg);
+    }
+
+    
+}

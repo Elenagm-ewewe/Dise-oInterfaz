@@ -1,0 +1,143 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+.puntos-venta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 2em;
+}
+
+.tarjeta{
+    width: 200px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.377);
+    border-radius: 5px;
+    
+}
+
+.tarjeta:hover .color{
+    height: 4em;
+}
+
+.tarjeta:hover .color img{
+    display: flex;
+    transition: 2s linear;
+}
+
+.color{
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 1em;
+    width: 100%;
+    background-color: #47B29E ;
+    transition: 0.1s ease-in;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.color img{
+    display: none;
+    width: 12em;
+}
+
+.info{
+    margin: 1em;
+}
+
+.tlf{
+    color: #F4AD21;
+}
+
+.tlf img{
+    width: 1em;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.nombre{
+    color: #F4AD21;
+    font-size: 1.3em;
+}
+
+.banner {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #542211;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Estanteria-mostrador-pan-casadiella-y-cafe.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 2s ease-in-out;
+}
+
+.banner:hover::before {
+    transform: scale(1.05);
+    filter: blur(5px);
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #0c0c0cbe;
+    border-radius: 30px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    color: #F4AD21;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+.banner2{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color:#47B29E;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+iframe{
+    width: 70%;
+    margin-bottom: 2em;
+}

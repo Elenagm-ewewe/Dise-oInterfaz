@@ -7,11 +7,16 @@ main{
     background-color: rgb(243, 243, 243);
 }
 
+#focus{
+    color: #47B29E;
+}
+
 .puntos-venta{
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    margin: 2em;
+    margin: 1em;
+    justify-content: center;
 }
 
 .tarjeta{
@@ -140,4 +145,12 @@ main{
 iframe{
     width: 70%;
     margin-bottom: 2em;
+}
+
+
+h3{
+    color: #542211;
+    margin: 0em;
+    margin-top: 0.5em;
+    font-size: 3em;
 }

@@ -1,0 +1,209 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+    background-color: rgb(243, 240, 240);
+    min-height: 80vh;
+}
+
+.focus{
+    color: #47B29E;
+}
+
+.contacto-header {
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 100%;
+    max-width: 900px;
+}
+
+.contacto-header h1 {
+    font-size: 2.5em;
+    color:#e09e1f;
+    margin-bottom: 0.2em;
+}
+
+.contacto-header p {
+    font-size: 1.1em;
+    color:#e09e1f
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2em;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 1em;
+}
+
+
+@media (min-width: 768px) {
+    .contacto-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.formulario-container, .info-container {
+    padding: 2em;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-container h2, .info-container h2 {
+    color:#e09e1f;
+    margin-top: 0;
+    border-bottom: 2px solid #47B29E;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+.contacto-form .form-group {
+    margin-bottom: 1em;
+}
+
+.contacto-form label {
+    display: block;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: inherit;
+    font-size: 1em;
+}
+
+input[type="text"]:focus{
+    border: #47B29E;
+}
+
+.contacto-form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #e09e1f;
+    color: white;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.btn-submit:hover {
+    background-color: #47B29E;
+}
+
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.info-item i { 
+    font-size: 1.5em;
+    color:#e09e1f;
+    margin-top: 0.1em;
+}
+
+.info-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.mapa-container {
+    margin-top: 2em;
+}
+
+.mapa-container iframe {
+    border-radius: 8px;
+    display: block;
+}
+
+.banner {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #542211;
+    margin-bottom: 2em;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Estanteria-mostrador-pan-casadiella-y-cafe.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 2s ease-in-out;
+}
+
+.banner:hover::before {
+    transform: scale(1.05);
+    filter: blur(5px);
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #0c0c0cbe;
+    border-radius: 30px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    color: #F4AD21;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+.banner2{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color:#47B29E;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

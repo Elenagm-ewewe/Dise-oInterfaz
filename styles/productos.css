@@ -1,0 +1,187 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #eeeeee;
+    color: #4F382A;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navegacion-categorias div a{
+    color: #47B29E;
+    cursor: pointer;
+    height: 2em;
+    text-decoration: none;
+}
+
+.navegacion-categorias div a:hover{
+    color:#542211;
+    cursor: pointer;
+    height: 2em;
+    text-decoration: none;
+}
+
+
+.navegacion-categorias {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-bottom: 2px solid #8B4513;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navegacion-categorias div{
+    align-items: center;
+    align-content: center;
+}
+
+.navegacion-categorias button {
+    background:#F4AD21;
+    color: #FAF0E6;
+    border: none;
+    padding: 0.5em 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navegacion-categorias button:hover,
+.navegacion-categorias button.activo {
+    background-color:#47B29E;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+.catalogo-productos {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.producto-tarjeta {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    text-align: center;
+}
+
+
+.producto-tarjeta:hover {
+    transform: translateY(-5px);
+    filter: opacity(80%)
+}
+
+.producto-tarjeta .producto {
+    background-color: #f8f6f6;
+    width: 90%;
+    height: 8em;
+    object-fit:contain;
+    border-bottom: 3px solid #FFD700;
+    padding: 1em;
+}
+
+.producto-info {
+    padding: 15px;
+}
+
+.producto-info h3 {
+    font-size: 1.2rem;
+    font-weight:normal;
+    color: #8B4513;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4F382A;
+    margin-bottom: 10px;
+}
+
+
+.banner {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #542211;
+    margin-bottom: 2em;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/banner/5tfgwergwertg.png");
+    background-size: cover;
+    background-position: center;
+    transition: 2s ease-in-out;
+}
+
+.banner:hover::before {
+    transform: scale(1.05);
+    filter: blur(5px);
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    min-width: 600px;
+    padding: 20px;
+    background-color: #0c0c0cbe;
+    border-radius: 30px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    color: #F4AD21;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+.banner2{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color:#47B29E;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.focus{
+#focus{
     color: #47B29E;
 }
 
@@ -99,6 +99,15 @@ header {
     margin: 5px;
 }
 
+.htelefono p a{
+    color: #F4AD21;
+    text-decoration: none;
+}
+
+.htelefono p a:hover{
+    color:#47B29E
+}
+
 .htelefono p strong{
     margin: 5px;
 }
@@ -156,8 +165,7 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 
-.footer-col p,
-.footer-col li {
+.footer-col p{
     opacity: 0.85;
     margin-bottom: 6px;
 }
@@ -178,7 +186,7 @@ nav ul li a:hover{
 
 
 .footer-logo {
-    width: 120px;
+    width: 250px;
     margin-bottom: 10px;
 }
 
@@ -202,8 +210,43 @@ nav ul li a:hover{
     opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+    .hheader {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hheader nav{
+        margin: 0;
+        padding: 0;
+    }
+
+    .hheader nav ul {
+        flex-direction: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0.5em 0;
+        padding: 0;
+    }
+
+    .hheader nav ul li a {
+        padding: 10px;
+        margin: 0;
+    }
 
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+}
 
 
 @keyframes vibrar {

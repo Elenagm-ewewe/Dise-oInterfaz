@@ -1,0 +1,211 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #F9F7F3;
+    color: #5D4037;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-sobre-nosotras {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/tarta-vintage-fondo.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    position: relative;
+}
+
+.hero-sobre-nosotras::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(93, 64, 55, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.seccion-texto {
+    width: 80%;
+    max-width: 900px;
+    padding: 60px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.seccion-texto h2 {
+    font-size: 3rem;
+    color:#F4AD21;
+    position: relative;
+}
+
+.seccion-texto h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #D7CCC8;
+    margin: 10px auto 0;
+}
+
+.seccion-texto p {
+    font-size: 1.15rem;
+    color: #4F382A;
+    text-align: justify;
+}
+
+.valores-grid {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    gap: 40px;
+}
+
+.valor-item {
+    flex: 1;
+    text-align: center;
+}
+
+.valor-item img {
+    width: 20em;
+    height: 20em;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #47B29E;
+}
+
+.valor-item h3 {
+    font-size: 1.5rem;
+    color: #5D4037;
+    margin-bottom: 10px;
+}
+
+.valor-item p {
+    font-size: 1rem;
+    color: #6D544C;
+}
+
+
+.imagen-destacada {
+    width: 100%;
+    height: 350px;
+    background-image: url("/images/rwsertgwerth.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .valores-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .seccion-texto {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .seccion-texto p {
+        text-align: left;
+    }
+}
+
+.banner {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #542211;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/banner/DSC_0197.png");
+    background-size: cover;
+    background-position: center;
+    transition: 2s ease-in-out;
+}
+
+.banner:hover::before {
+    transform: scale(1.05);
+    filter: blur(5px);
+}
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    min-width: 600px;
+    padding: 20px;
+    background-color: #0c0c0cbe;
+    border-radius: 30px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    color: #F4AD21;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+.banner2{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color:#47B29E;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

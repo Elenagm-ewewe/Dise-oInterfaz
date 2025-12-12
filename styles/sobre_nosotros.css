@@ -54,7 +54,7 @@ main {
 .seccion-texto {
     width: 80%;
     max-width: 900px;
-    padding: 60px 0;
+    padding: 40px 0;
     margin-top: 20px;
     text-align: center;
 }
@@ -68,9 +68,9 @@ main {
 .seccion-texto h2::after {
     content: "";
     display: block;
-    width: 80px;
+    width: 40%;
     height: 2px;
-    background-color: #D7CCC8;
+    background-color:#47B29E;
     margin: 10px auto 0;
 }
 

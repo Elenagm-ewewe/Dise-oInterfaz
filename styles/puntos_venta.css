@@ -167,3 +167,40 @@ h4{
 iframe{
     width: 80%;
 }
+
+
+
+@media (max-width: 768px) {
+    .banner-content {
+        min-width: 300px;
+        padding: 15px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .puntos-venta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 90%;
+        margin: 0;
+    }
+
+    .tarjeta:hover .color img{
+        width: 100%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 300px;
+    }
+}

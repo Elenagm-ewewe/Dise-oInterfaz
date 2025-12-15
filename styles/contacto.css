@@ -21,7 +21,7 @@ main {
 
 .contacto-header h1 {
     font-size: 2.5em;
-    color:#e09e1f;
+    color:#d66800;
     margin-bottom: 0.2em;
 }
 
@@ -95,7 +95,7 @@ input[type="text"]:focus{
 }
 
 .btn-submit {
-    background-color: #e09e1f;
+    background-color: #d66800;
     color: white;
     padding: 1em 1.5em;
     border: none;

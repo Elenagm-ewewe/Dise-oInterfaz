@@ -93,9 +93,6 @@ nav ul li a:active {
 }
 
 main {
-    padding-top: 2em;
-    padding-right: 17%;
-    padding-left: 17%;
     background: rgb(238, 237, 237);
     margin: 0;
 }
@@ -109,9 +106,16 @@ main h2 {
 }
 
 .novedades{
+    margin-left: 10%;
+    margin-right:10% ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.novedades h2{
+    width: 100%;
+    margin-top: 30px;
 }
 
 .novedad{
@@ -152,8 +156,8 @@ main h2 {
 
 
 .descripcion{
+    width: 80%;
     display: flex;
-    justify-content: space-between;
     margin: 20px auto;
     padding: 20px;
     background: #ffffff;

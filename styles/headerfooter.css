@@ -88,10 +88,10 @@ header {
 .htelefono{
     display: flex;
     padding-left: 10%;
-    align-items: center;
+    align-content: center;
 }
 
-.htelefono img{
+.htelefono a img{
     height: 25px;
 }
 
@@ -99,17 +99,19 @@ header {
     margin: 5px;
 }
 
-.htelefono p a{
+.htelefono a{
     color: #F4AD21;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
-.htelefono p a:hover{
+.htelefono a:hover{
     color:#47B29E
 }
 
-.htelefono p strong{
+.htelefono a strong{
     margin: 5px;
+    color: white;
 }
 
 .hredes{

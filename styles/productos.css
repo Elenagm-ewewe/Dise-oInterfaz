@@ -41,9 +41,14 @@ main {
     align-items: center;
 }
 
-.navegacion-categorias div{
+.navegacion-categorias a{
     align-items: center;
     align-content: center;
+    text-decoration: none;
+    color: #47B29E;
+}
+.navegacion-categorias a:hover{
+    color:#4F382A;
 }
 
 .navegacion-categorias button {

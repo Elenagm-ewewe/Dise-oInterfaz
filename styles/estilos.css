@@ -64,7 +64,7 @@ nav ul li a:active {
 
 .banner-btn {
     display: inline-block;
-    background-color: #F4AD21;
+    background-color: #d66800;
     color: #fff;
     padding: 12px 25px;
     text-decoration: none;
@@ -101,8 +101,8 @@ main {
 }
 
 main h2 {
-    text-align: center;
-    color:#F4AD21;
+    text-align: left;
+    color:#542211;
     font-size: 40px;
     font-weight: bolder;
 
@@ -169,7 +169,7 @@ main h2 {
 }
 
 .texto h2{
-    color:#F4AD21;
+    color:#d66800;
     font-size: 30px;
     margin-bottom: 20px;
 }
